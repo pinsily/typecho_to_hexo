@@ -4,7 +4,7 @@ import codecs
 import time
 
 def read_text():
-	db = pymysql.connect(charset='utf8',host='127.0.0.1', port=3306, user='root', passwd='pinsily',db='typecho_db')
+	db = pymysql.connect(charset='utf8',host='127.0.0.1', port=3306, user='', passwd='',db='')
 	cursor = db.cursor()
 	select_sql = "select * from typecho_contents"
 	cursor.execute(select_sql)
